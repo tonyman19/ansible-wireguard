@@ -16,10 +16,10 @@
   apt_repository:
     repo: ppa:wireguard/wireguard
   when: ansible_distribution == 'Ubuntu'
-
-- name: Install Linux kernel headers
-  apt:
-    name: linux-headers-amd64
+#
+#- name: Install Linux kernel headers
+#  apt:
+#    name: linux-headers-amd64
 
 - name: Install WireGuard
   apt:
